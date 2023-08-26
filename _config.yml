@@ -3,7 +3,7 @@
 title: Nice to meet you
 description: Jekyll microtheme that looks like JSON
 baseurl: "/personal-page"
-url: https://kautsarv.github.io
+url: "https://kautsarv.github.io"
 
 # this information is shown on the homepage, all fields are optional and
 # can be declared either as a single string or as a string array/hash
