@@ -1,7 +1,7 @@
 # this is only for search engines, it does not appear in the home
 # as long as the json variables name and description are provided
-title: Nice to meet you
-description: Jekyll microtheme that looks like JSON
+title: What's Up Nerd
+description: An ordinary personal web
 baseurl: ""
 url: "https://kautsarv.github.io"
 
@@ -16,17 +16,27 @@ json:
     - Currently working at
     - Allianz Indonesia
     - Let's connect
-  cv: assets/cv.pdf
+  #cv: assets/cv.pdf
   address:
     city: jakarta
     country: indonesia
+  hobby:
+    1: Culinary
+    2: Playing Video Games
+    3: Little Bit of Software Testing
+  certification:
+    1: ISTQB Agile Tester (CTFL-AT)
+    2: ISTQB Certified Tester
+    3: LOMA 281
   email: ochank255@yahoo.com
   profiles:
-    blog: https://kautsarv.github.io/starvedgeek/
+    #blog: https://kautsarv.github.io/starvedgeek/
     linkedin: https://www.linkedin.com/in/kautsar-virzawan/
     github: https://github.com/Kautsarv
     personal instagram: https://www.instagram.com/kautsarv/?hl=id
     food review instagram: https://www.instagram.com/starvedgeek/?hl=id
+    gaming achievement: https://psnprofiles.com/Kautsarv
+  demo: url
 
 exclude:
   - LICENSE

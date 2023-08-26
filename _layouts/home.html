@@ -9,6 +9,8 @@ layout: default
     {% else %}
     <p><span class="key">status</span><span class="attr">{{ site.json.status }}</span></p>
     {% endif %}
+  </div>
+  <div class="block">
     {% if site.json.description %}
     {% if site.json.description.first %}
     <div id="typed-strings">
@@ -24,6 +26,18 @@ layout: default
     <p><span class="key">description</span><span class="attr">{{ site.description }}</span></p>
     {% endif %}
   </div>
+
+  <div class="block">
+    {% if site.json.hobby %}
+    <span class="array-key">hobby</span>
+    <div class="array">
+      {% for i in site.json.hobby %}
+      <p><span class="array-attr">{{ i | slice: 1 }}</span></p>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+
   <div class="block">
     {% if site.json.address %}
     {% if site.json.address.first %}
@@ -36,6 +50,16 @@ layout: default
     {% else %}
     <p><span class="key">address</span><span class="attr">{{ site.json.address }}</span></p>
     {% endif %}
+    {% endif %}
+  </div>
+  <div class="block">
+    {% if site.json.certification %}
+    <span class="array-key">certification</span>
+    <div class="array">
+      {% for i in site.json.certification %}
+      <p><span class="array-attr">{{ i | slice: 1 }}</span></p>
+      {% endfor %}
+    </div>
     {% endif %}
   </div>
   <div class="block">
