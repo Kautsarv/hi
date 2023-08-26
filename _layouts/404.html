@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<main class="json">
+  <div class="block">
+    {% if site.json.name %}
+    <p><span class="key">status</span><span class="attr">{{ 404 }}</span></p>
+    {% else %}
+    <p><span class="key">status</span><span class="attr">{{ 404 }}</span></p>
+    {% endif %}
+    {% if site.json.description %}
+    <p><span class="key">description</span><span class="attr">{{ "you're going wrong way" }}</span></p>
+    {% endif %}
+    {% if site.json.demo %}
+    {% assign demo = site.json.demo | split: "//" | slice: 1 %}
+    <p><span class="key">url</span><span class="attr"><a href="{{ site.url }}">{{ "back to homepage" }}</a></span></p>
+    {% endif %}
+  </div>
+</main>
